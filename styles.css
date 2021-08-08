@@ -1,0 +1,80 @@
+/********************************* RESET **********************************/
+
+*{
+    background: var(--background-color);
+    color:var(--text-color);
+}
+
+/******************************** VARIABLES ******************************/
+:root{
+    /* colors */
+--hue: 159;
+/* HSL color mode */
+--background-color: hsl(var(--hue) 0% 0%);
+--text-color: hsl(0 100% 100%);
+--base-color: hsl(199 78% 47%);
+ --base-color-second: hsl(199, 67%, 31%);;
+/*--base-color-alt: hsl(var(--hue) 57% 53%);
+--title-color: hsl(var(--hue) 41% 10%);
+--text-color: hsl(0 0% 46%);
+--text-color-light: hsl(0 0% 98%);
+--body-color: hsl(0 0% 98%); */
+}
+
+/******************************** FORMULÁRIOS ******************************/
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 4.5rem;
+}
+.form{
+    width: 18.75rem;
+    height: 18.75rem;
+}
+
+.form input{
+    border-color: var(--base-color);
+    border-radius: 0.5rem;
+    padding: 0.9375rem;
+    margin: 0.3125rem;
+    width: 16.25rem;
+    height: 1rem;
+}
+
+.form .botao{
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    width: 18.25rem;
+    height: 2.5rem;
+    background: var(--base-color);
+    cursor: pointer;
+}
+
+.form h1{
+    color: var(--base-color);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.form .botao:hover{
+    background: var(--base-color-second);
+    border-color: var(--base-color-second);
+}
+
+/* .form .checkbox{
+    display: flex; 
+    text-align: right;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content:left;
+    align-items:flex-start;
+    display:inline-block;
+    /* /* float: left; 
+} */
+
