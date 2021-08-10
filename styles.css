@@ -28,6 +28,18 @@ html{
     scroll-behavior: smooth;
 }
 
+section{
+    padding: 5rem 0;
+}
+h1{
+    color: var(--base-color);
+    font-size: 3rem;
+}
+h2{
+    color: #dfd3d3;
+    font-size: 2rem;
+}
+
 /******************************** VARIABLES ******************************/
 :root{
     /* colors */
@@ -106,7 +118,17 @@ html{
 } */
 
 /******************************** MENU ******************************/
+#header{
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 2rem;
+    display: flex;
 
+    width: 100%;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+}
 nav.container2{
     display: flex;
     justify-content: space-between;
@@ -242,3 +264,35 @@ nav.container2.show div.icon-close{
 .swiper-pagination-bullet-active {
     background: var(--base-color);
 }
+
+/******************************** PERFIL******************************/
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 4.5rem;
+
+    justify-content: space-between;
+}
+
+/******************************** ANIME******************************/
+
+/* .trailer{
+    width: 100;
+    height: 400;
+} */
+
+q{
+    display: flex;
+    text-align: center;
+    
+}
+
+/* .sinopse{
+    width: 43.75rem;
+    height: auto;
+} */
+
+
